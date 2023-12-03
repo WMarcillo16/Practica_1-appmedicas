@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AutenticacionService } from './shared/autenticacion.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appmedicas';
+  constructor(private loginPrd:AutenticacionService){}
+
+  public visualizarMenu(){
+    return this.loginPrd.habilitarlogeo();
+  }
 }

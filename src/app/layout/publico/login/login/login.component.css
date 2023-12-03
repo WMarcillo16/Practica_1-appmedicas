@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    object-fit: cover; 
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    right: 0; 
+    transform: translate(0,-50%);
+  
+    width: 400px;
+    padding: 40px;
+    
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.5); 
+  }
+  
+  .card {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);  
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+  }
+
